@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/carteirinha_background">
+
+        <!-- Área esquerda com foto e logo -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#1A237E">
+
+            <!-- Logo da instituição (opcional) -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Logo da instituição" />
+
+            <!-- Container para a foto com borda -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/imgFotoCarteirinha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Foto do estudante" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Texto "Estudante" -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginTop="8dp"
+                android:text="ESTUDANTE"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Área direita com dados -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_vertical"
+            android:background="#FFFFFF">
+
+            <!-- Título da carteirinha -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CARTEIRA ESTUDANTIL"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#1A237E"
+                android:gravity="center"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Dados do estudante com estilo melhorado -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome: "
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A237E" />
+
+                <TextView
+                    android:id="@+id/tvNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="#212121" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telefone: "
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A237E" />
+
+                <TextView
+                    android:id="@+id/tvTelefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="#212121" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cidade/Estado: "
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A237E" />
+
+                <TextView
+                    android:id="@+id/tvCidadeEstado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="#212121" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Matrícula: "
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A237E" />
+
+                <TextView
+                    android:id="@+id/tvMatricula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="#212121" />
+            </LinearLayout>
+
+            <!-- Validade -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Validade: "
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A237E" />
+
+                <TextView
+                    android:id="@+id/tvValidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="31/12/2025"
+                    android:textSize="16sp"
+                    android:textColor="#212121" />
+            </LinearLayout>
+
+            <!-- QR Code (opcional) -->
+            <ImageView
+                android:id="@+id/imgQRCode"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:contentDescription="QR Code para validação" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
