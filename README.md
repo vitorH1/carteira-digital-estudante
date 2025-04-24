@@ -5,7 +5,7 @@ Aplicativo Android de carteirinha digital voltado para estudantes. O objetivo é
 ## 📱 Funcionalidades
 
 - Cadastro de estudante
-- Geração de carteirinha com QR Code
+- Geração de carteirinha
 - Visualização de informações pessoais
 - Integração com base de dados local ou remota
 
@@ -13,12 +13,6 @@ Aplicativo Android de carteirinha digital voltado para estudantes. O objetivo é
 
 - Kotlin
 - Android Studio
-- Jetpack (ViewModel, LiveData, Navigation, etc.)
-- Firebase (opcional)
 - SQLite ou Room
 
-## 🚀 Como rodar o projeto
 
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/vitorH1/carteira-digital-estudante.git
